@@ -29,12 +29,12 @@ model.add(Conv2D(6, kernel_size=(5,5),
                  activation='relu',
                  input_shape=(28,28,1)))
 
-model.add(AveragePooling2D())
+model.add(AveragePooling2D(pool_size=(2,2)))
 
 model.add(Conv2D(16, kernel_size=(5,5),
                  activation='relu'))
 
-model.add(AveragePooling2D())
+model.add(AveragePooling2D(pool_size=(2,2)))
 
 model.add(Flatten())
 
